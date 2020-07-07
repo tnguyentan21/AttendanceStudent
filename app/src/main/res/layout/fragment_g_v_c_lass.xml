@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:padding="@dimen/dp_4"
+    tools:context=".techer.GVCLassFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:text="Danh Sách Sinh Viên" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/dp_4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_marginStart="@dimen/dp_4"
+            android:textColor="@android:color/black"
+            android:text="Điểm Danh:"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:gravity="start|center"
+            android:layout_gravity="start|center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/qrCode"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_bg"
+                android:layout_marginEnd="4dp"
+                android:text="QR Code"/>
+
+            <Button
+                android:id="@+id/taoQR"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_bg"
+                android:text="Tạo QR"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Trạng thái: "/>
+
+            <Switch
+                android:id="@+id/switchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewStudent"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/dp_4"
+        tools:listitem="@layout/item_list_student"/>
+    <Button
+        android:id="@+id/xuatDs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_2"
+        android:text="Xuất DS"/>
+</LinearLayout>
