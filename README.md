@@ -23,7 +23,7 @@ Add the SHA certificate fingerprint to this [database](https://console.firebase.
 account: nttdemo20@gmail.com
 password: Tantai123
 ```
-Open the project with Android Studion then run the app.
+Open the project with Android Studio then run the app.
 ## Usage
 **For teacher role, follow these steps:**
 1. Login the app with this account
