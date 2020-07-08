@@ -48,8 +48,8 @@ password: Tantai123
 
 9. Check the attendance list file at this direction
 ```python 
-Android 10: localstorage/Android/data/com.qc.attendancestudent/files/Download/
-Android 9 or lower: localstorage/Download/
+Android 10: internalstorage/Android/data/com.qc.attendancestudent/files/Download/
+Android 9 or lower: internalstorage/Download/
 ```
 
 **For student role, follow these steps:**
