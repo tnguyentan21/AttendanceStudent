@@ -56,14 +56,14 @@ Android 9 or lower: internalstorage/Download/
 1. Login the app with one of these account
 
 ```python
-nttdemo001@gmail.com
-Tantai123456
+account: nttdemo001@gmail.com
+password: Tantai123456
 
-nttdemo002@gmail.com
-Tantai123
+account: nttdemo002@gmail.com
+password: Tantai123
 
-nttdemo003@gmail.com
-Tantai123
+account: nttdemo003@gmail.com
+password: Tantai123
 ```
 2. Press `SCAN QR CODE` to start scan QRcode provided by teacher and check attendance.
 
